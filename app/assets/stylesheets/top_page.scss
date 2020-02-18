@@ -1,18 +1,57 @@
 .header{
-  background: #27279F;
-  height: 80px;
+  background:#1a1a1a;
+  height: 70px;
   font-family: 'Montserrat Subrayada', sans-serif;
   display: flex;
   color: white;
   .logo{
-  margin: 20px;
-  font-size: 25px;
+  margin: 20px 40px;
+  font-size: 30px;
   width: 60%;
   }
   p {
   font-size: 16px;
   margin: 20px 10px;
-  
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  line-height: 30px;
+  border-left : solid 3px white;
+  border-bottom : solid 1px white;
+  cursor: pointer;
   }
-  
+}
+.content{
+  background-image: image-url("pic/3D2632A6-BB49-4055-AB19-D584ABF1A74A.JPEG");
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: white;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .main_logo{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .description{
+    background: rgba(8, 8, 8, 0.3);
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 400px;
+  }
+}
+.footer{
+  background:#1a1a1a;
+  height: 30px;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  .footer_logo{
+    margin: 5px auto;
+  }
 }
