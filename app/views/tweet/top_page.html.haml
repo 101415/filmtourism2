@@ -2,15 +2,17 @@
   .logo
     Filmtourism
   %p
-    ログイン
+    = link_to "ログイン",new_user_session_path,class:"logo2"
   %p
-    サインアップ
+    = link_to"サインアップ", new_user_registration_path,class:"logo2"
   %P
     ゲストユーザー
   %p
     投稿一覧
   %p
     地図で見る
+  %p
+    = link_to"ログアウト", destroy_user_session_path,class:"logo2", method: :delete 
 .content
   .main_logo
     Filmtourism
@@ -19,6 +21,4 @@
 .footer
   .footer_logo
     ©2020 filmtourism
-
-  
 

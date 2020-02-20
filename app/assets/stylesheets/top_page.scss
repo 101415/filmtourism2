@@ -19,6 +19,11 @@
   border-left : solid 3px white;
   border-bottom : solid 1px white;
   cursor: pointer;
+  color: white;
+    .logo2{
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 .content{
@@ -46,11 +51,12 @@
 }
 .footer{
   background:#1a1a1a;
-  height: 30px;
+  height: 40px;
   font-family: 'Montserrat Subrayada', sans-serif;
   color: white;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 30px;
   .footer_logo{
     margin: 5px auto;
   }

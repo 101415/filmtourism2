@@ -1,0 +1,30 @@
+.contents.row
+  = render "layouts/header"
+  .container
+    %h2 会員登録
+    = form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f|
+      = devise_error_messages!
+      .field
+        = f.label :nickname
+        %em 
+        %br
+        = f.text_field :nickname, autofocus: true, maxlength: "20"
+      .field
+        = f.label :email
+        %em
+        %br/
+        = f.email_field :email
+      .field
+        = f.label :password
+        - if @validatable
+          %em
+            (#{@minimum_password_length} characters minimum)
+        %br/
+        = f.password_field :password, autocomplete: "off"
+      .field
+        = f.label :password_confirmation
+        %br/
+        = f.password_field :password_confirmation, autocomplete: "off"
+      .actions
+        = f.submit "Sign up"
+    = render "layouts/footer"
