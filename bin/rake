@@ -2,4 +2,8 @@
 require_relative '../config/boot'
 require 'rake'
 Rake.application.run
+<<<<<<< HEAD
 Rake.application.run
+=======
+Rake.application.runnner
+>>>>>>> b3d3998 (test_2)
